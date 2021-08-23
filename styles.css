@@ -59,6 +59,8 @@ body {
   color: rgb(221, 220, 220);
   font-family: Roboto, sans-serif;
   text-align: left;
+  width: 20%;
+  line-height: 1.6;
 }
 
 .highest {
