@@ -83,3 +83,21 @@ b {
   color: black;
   font-weight: bold;
 }
+
+.display-none {
+  display: none;
+}
+
+#gameStarter {
+  color: white;
+  background-color: tomato;
+  border: none;
+  padding: 12px 16px;
+  border-radius: 5px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 700;
+  font-size: 20px;
+  cursor: pointer;
+  margin: auto;
+  margin-top: 20px;
+}
