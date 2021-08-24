@@ -76,6 +76,9 @@ $(".btn").on("click", function(){
                     $("body").css("background-color", "#011F3F");
                 }, 400);
                 $("#level-title").text("Game Over, Press any Key to Restart!");
+                
+                $("#gameStarter").removeClass("display-none");
+                $("#gameStarter").text("Restart");
             }
         } else if(buttonPressedByUser !== buttonExpectedToBePressed) {
             timeOut = 1000;
@@ -90,6 +93,9 @@ $(".btn").on("click", function(){
                 $("body").css("background-color", "#011F3F");
             }, 400);
             $("#level-title").text("Game Over, Press any Key to Restart!");
+            
+            $("#gameStarter").removeClass("display-none");
+            $("#gameStarter").text("Restart");
         }
     }
 })
@@ -106,8 +112,21 @@ $(document).keydown(function() {
         nextSequence();
         userSelectedSequence = [];
     }
+    
+    $("#gameStarter").addClass("display-none");
 });
 
+$("#gameStarter").click(() => {
+    keyPressNumber ++;
+    level++;
+    gameHasStarted = true;
+    if(keyPressNumber === 1) {
+        nextSequence();
+        userSelectedSequence = [];
+    }
+
+    $("#gameStarter").addClass("display-none");
+});
 
 
 
